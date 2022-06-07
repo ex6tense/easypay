@@ -1,14 +1,18 @@
 <!DOCTYPE html>
-<html>
+
+<head>
+  <title>Drag and Drop File Upload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="./src/main.css">
+</head>
+
 <body>
+  <div class="drop-zone">
+    <span class="drop-zone__prompt">Drop file here or click to upload</span>
+    <input type="file" name="myFile" class="drop-zone__input">
+  </div>
 
-<p>Click en "Selecionar archivo" para subir el archivo:</p>
-
-<form action="upload.php" method="post" enctype="multipart/form-data">
-  Select image to upload:
-  <input type="file" name="fileToUpload" id="fileToUpload">
-  <input type="subir" value="Subir imagen" name="submit">
-</form>
- 
+  <script src="./src/drop.js"></script>
 </body>
-</html>
